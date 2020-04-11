@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.open</groupId>
+    <artifactId>wx-robot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>wx-robot</name>
+    <description>系统告警之企业微信</description>
+
+    <developers>
+        <developer>
+            <name>Baizhen</name>
+            <url>https://github.com/gaoqinibm/</url>
+            <email>13634195169@139.com</email>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>11</java.version>
+        <fastjson.version>1.2.68</fastjson.version>
+        <hutool.version>5.2.5</hutool.version>
+        <lombok.version>1.18.12</lombok.version>
+        <logback-core.version>1.2.3</logback-core.version>
+        <logback-classic.version>1.0.13</logback-classic.version>
+        <junit.version>4.12</junit.version>
+        <httpclient.version>4.5.6</httpclient.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+            <version>${junit.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback-classic.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus_release</id>
+            <name>release</name>
+            <url>http://192.168.20.178:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus_snapshots</id>
+            <name>snapshots</name>
+            <url>http://192.168.20.178:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
