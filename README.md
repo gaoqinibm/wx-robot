@@ -5,5 +5,5 @@
     
 ### 接入方式详见 https://github.com/gaoqinibm/dingtsalk-robot
 ----------------------------------------------
-#### 觉得好用，感谢打赏，祝福各位找到真爱。
+#### 话说，打赏我的人最后都找到了真爱。
 ![Alt text](./src/main/resources/支付宝二维码.png)
