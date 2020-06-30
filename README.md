@@ -6,4 +6,4 @@
 ### 接入方式详见 https://github.com/gaoqinibm/dingtalk-robot
 ----------------------------------------------
 #### 话说，打赏我的人最后都找到了真爱。
-![Alt text](./src/main/resources/支付宝二维码.png)
+![Alt text](./src/main/resources/image.png)
