@@ -28,7 +28,7 @@
         <logback-core.version>1.2.3</logback-core.version>
         <logback-classic.version>1.0.13</logback-classic.version>
         <junit.version>4.12</junit.version>
-        <httpclient.version>4.5.6</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
     </properties>
 
     <dependencies>
